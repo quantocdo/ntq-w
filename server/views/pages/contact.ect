@@ -1,0 +1,47 @@
+<% extend '_flow' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('contact.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<div class="container">
+	<div class="page-title text-center text-upper text-blue">
+		<h1><%- @__('CONTACT') %></h1>
+	</div>
+</div>
+<div class="section-form">
+	<div class="container">
+		<div class="explain text-center">
+			<p><%- @__('CONTACT_DESC') %></p>
+		</div>
+		<div class="gs">
+			<div class="row">
+				<div class="col-10-offset-1">
+					<form class="form" method="post" action="/contact">
+						<div class="line">
+							<input type="text" placeholder="<%- @__('NAME') %>" name="name" required>
+						</div>
+						<div class="line">
+							<input type="email" placeholder="<%- @__('EMAIL_ADDRESS') %>" name="email" required>
+						</div>
+						<div class="line">
+							<input type="text" placeholder="<%- @__('SUBJECT') %>" name="subject" required>
+						</div>
+						<div class="line">
+							<textarea placeholder="<%- @__('MESSAGE_CONTENT') %>" rows="10" name="body" required></textarea>
+						</div>
+						<div class="text-right">
+							<button class="text-white text-upper button-submit">Send message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% end %>

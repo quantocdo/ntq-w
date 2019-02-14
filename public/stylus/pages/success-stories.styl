@@ -1,0 +1,64 @@
+@import '../main'
+
+.page-header
+	background-image url('~img/bg/success_stories.jpg')
+
+.page-content
+	background $color_white
+
+.section
+	padding-top: 50px
+	padding-bottom: 30px
+
+	.heading
+		font-size: 30px
+
+	.sub-heading
+		padding-top: 10px
+		font-size: 18px
+
+	.explain
+		padding-top: 20px
+		line-height: $text_paragraph_line_height
+
+	.detail-info
+		padding-top: 50px
+		line-height: $text_paragraph_line_height
+
+		ul
+			padding-bottom: 20px
+
+		.technologies
+			display: grid
+			grid-column-grap: 20px
+			grid-template-columns: 100%
+
+			@media (min-width: 768px)
+				grid-template-columns: 1fr 1fr
+
+	.result
+		border-left: 4px solid $color_blue
+		padding: 10px 0 10px 10px
+		line-height: $text_paragraph_line_height
+
+.download
+	background: $color_blue
+
+	.heading
+		font-size: 30px
+
+	.download-button
+		padding-top: 30px
+
+		a
+			font-size: 30px
+			display: inline-block
+			line-height: 70px
+			padding: 0 27px
+			border-radius: 4px
+			background: $color_white
+			font-family: 'Raleway'
+			font-weight: bold
+
+			.icon-see-more
+				padding-left: 10px

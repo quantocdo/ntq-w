@@ -1,0 +1,150 @@
+@import '../main'
+
+.page-header
+  background-image url('~img/bg/rd.jpg')
+
+.page-content
+  background $color_white
+
+  .section-intro
+    padding-top: 100px
+    padding-bottom: 50px
+
+    .content
+      display: grid
+      grid-gap: 20px
+      grid-template-columns: 100%
+
+      @media (min-width: 1440px)
+        grid-template-columns: auto 1fr
+
+      .img
+        text-align: center
+
+        img
+          max-width: 100%
+
+      .heading
+        font-size: 40px
+
+      .explain
+        padding-top: 20px
+
+      .reason
+        &.first
+          margin-top 62px
+
+        &.second
+          margin-top 38px
+
+        &.first
+        &.second
+          line-height $text_paragraph_line_height
+          padding-bottom 36px
+
+      .reason-break
+        width 225px
+        border-bottom 1px solid $color_gray_light
+
+  .section-videos
+    background: $color_green
+    padding-top: 100px
+    padding-bottom: 50px
+
+    .content
+      display: grid
+      grid-gap: 20px
+      grid-template-columns: 100%
+
+      @media (min-width: 768px)
+        grid-template-columns: repeat(2, 1fr)
+
+      @media (min-width: 1440px)
+        grid-template-columns: repeat(4, 1fr)
+
+    .video-container
+      background: $color_white
+      border: 1px solid $color_gray
+      border-radius: 4px
+      overflow: hidden
+
+      .video-frame
+        height: 280px
+        overflow: hidden
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
+
+        &.guidebot
+          background-image url('~img/rd/guidebot_m.jpg')
+
+        &.air-drone
+          background-image url('~img/rd/air_drone_m.jpg')
+
+        &.gecko
+          background-image url('~img/rd/gecko_m.jpg')
+
+        &.smart-card
+          background-image: url('~img/rd/smart-card.jpg')
+
+      .description
+
+        .heading
+          padding: 20px
+          font-size: 18px
+          font-weight: 700
+
+        .explain
+          padding: 0 20px 20px
+          line-height: $text_paragraph_line_height
+
+  .section-crazy
+    background: $color_white
+    padding-top: 100px
+    padding-bottom: 50px
+
+    .content
+      display: grid
+      grid-gap: 20px
+      grid-template-columns: 100%
+
+      @media (min-width: 1440px)
+        grid-template-columns: 1fr auto
+
+      .heading
+        font-size: 40px
+
+      .explain
+        font-size: 30px
+        padding-top: 30px
+
+      .team-picture
+        text-align: center
+
+        img
+          max-width 100%
+
+  .section-contact
+    background $color_blue
+    padding-top: 100px
+    padding-bottom: 50px
+
+    .intro
+      font-size: 30px
+      line-height: 36px
+
+    .contact
+      padding-top: 50px
+
+      a
+        display: inline-block
+        border-radius: 4px
+        background: $color_white
+        font-family: 'Raleway'
+        font-weight: bold
+        padding: 0 22px
+        line-height: 70px
+        font-size: 30px
+
+        .icon-see-more
+          margin-left: 10px

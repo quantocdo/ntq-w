@@ -1,0 +1,230 @@
+@import '../main'
+
+.page-header
+  background-image url('~img/bg/about.jpg')
+
+.page-content
+  background $color_white
+
+  .section-introduction
+    padding-top: 50px
+
+    .heading
+      display: grid
+      grid-template-columns: min-content 1fr
+      align-items: center
+      font-size: 18px
+
+      .ntq-info-icon
+        width: 50px
+        height: 41px
+        background-repeat: no-repeat
+        background-position: left center
+
+        &.icon-who
+          background-image url('~img/icons/anonymous_actor.png')
+
+        &.icon-what
+          background-image url('~img/icons/male.png')
+
+        &.icon-why
+          background-image url('~img/icons/globe_pin.png')
+
+
+    .ntq-info-paragraph
+      padding-top: 20px
+      padding-bottom: 50px
+      line-height: 1.5em
+
+  .section-ntq-members
+    padding-top: 50px
+    display: none
+
+    @media (min-width: 1440px)
+      display: block
+
+    .heading
+      font-size: 40px
+
+    .member-container
+      display: grid
+      grid-template-columns: repeat(5, 1fr)
+      grid-column-gap: 20px
+
+      .member
+        position: relative
+        height: 580px
+        display: flex
+        align-items: flex-end
+        justify-content: center
+
+        .biography
+          opacity: 1
+          position: absolute
+          bottom: 35px
+          background: color-fallback(rgba(0, 0, 0, .6))
+          padding: 10px
+          border-radius: 4px
+
+          .name
+            font-size: 20px
+
+          .position
+            padding-top: 10px
+
+          .intro
+            margin-top: 20px
+            line-height: 1.3em
+            font-size: 14px
+
+        &:hover
+          .biography
+            opacity 1
+
+  .section-video
+    background: $color_green
+    color: $color_white
+    padding-top: 100px
+    padding-bottom: 50px
+
+    .content
+      display: grid
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+      grid-template-columns: 100%
+
+      @media (min-width: 1024px)
+        grid-template-columns: 1fr 567px
+
+      .info
+        .heading
+          font-size: 40px
+
+        .explain
+          padding-top: 20px
+          font-size: 18px
+          line-height: 40px
+
+      .video-container
+        background: none
+
+        .video
+          height: 296px
+
+        @media (min-width: 768px)
+          background: url('~img/frames/frame_imac.png') no-repeat center center
+          width: 567px
+          height: 447px
+          padding: 19px
+          margin: 0 auto
+
+  .section-goals
+    padding-top: 100px
+    padding-bottom: 50px
+
+    .heading
+      font-size: 40px
+
+    .sub-heading
+      font-size: 18px
+      padding-top: 15px
+
+    .goals
+      padding-top: 50px
+      display: grid
+      grid-template-columns: 100%
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+
+      @media (min-width: 768px)
+        grid-template-columns: 1fr 1fr
+
+      .goal
+        padding-top: 50px
+        text-align: center
+
+        .goal-icon
+          margin-top: 50px
+          background: $color_blue
+          overflow: hidden
+          border-radius: 50%
+          background-repeat: no-repeat
+          background-position: center center
+          width: 116px
+          height: 116px
+          margin: 0 auto
+
+          &.revenue
+            background-image: url('~img/icons/money_bag.png')
+
+          &.human-resource
+            background-image: url('~img/icons/group.png')
+
+        .target-name
+          padding-top: 20px
+          font-size: 30px
+
+        .target
+          padding-top: 10px
+          font-size: 40px
+
+    .principles
+      padding-top: 20px
+      display: grid
+      grid-template-columns: 100%
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+
+      @media (min-width: 768px)
+        grid-template-columns: 1fr 1fr
+
+      .principle
+        padding-top: 30px
+
+      .heading
+        font-size: 30px
+        text-align: center
+
+      .items
+        li
+          display: grid
+          grid-template-columns: min-content minmax(auto, 350px)
+          grid-column-gap: 20px
+          padding-top: 10px
+          justify-content: center
+
+          p
+            line-height: 1.3em
+
+  .section-press-releases
+    background: $color_blue
+    color: $color_white
+    padding-top: 100px
+    padding-bottom: 50px
+
+    .content
+      text-align: center
+
+      .heading
+        font-size: 40px
+
+      .sub-heading
+        padding-top: 10px
+        font-size: 20px
+
+      .description
+        padding-top: 20px
+        padding-bottom: 50px
+        line-height: 1.3em
+
+      .video-container
+        margin: 0 auto
+
+        @media (min-width: 768px)
+          background url('~img/frames/frame_macbook.png') no-repeat center center
+          width: 626px
+          height: 369px
+          padding: 24px 81px
+
+        .video
+          height 290px

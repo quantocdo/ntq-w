@@ -1,0 +1,64 @@
+<% extend '_flow' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('services.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<div class="container">
+  <h1 class="page-title text-center text-upper"><%- @__('SERVICES') %></h1>
+</div>
+
+<div class="section-outsource" id="out-source">
+  <div class="container">
+    <h2 class="heading text-upper text-blue"><%- @__('SOFTWARE_OUTSOURCING_SERVICE') %></h2>
+    <p class="sub-heading text-blue"><%- @__('SOFTWARE_OUTSOURCING_SERVICE_DESC') %></p>
+    <div class="explain">
+      <p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_EXPLAIN') %></p>
+      <br>
+      <p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST') %></p>
+      <ul>
+        <li>
+          <i class="fa fa-caret-right text-blue"></i>
+          <span><%- @__('SOFTWARE_OUTSOURCING_SERVICE_ITEM_1') %></span>
+        </li>
+        <li>
+          <i class="fa fa-caret-right text-blue"></i>
+          <span><%- @__('SOFTWARE_OUTSOURCING_SERVICE_ITEM_2') %></span>
+        </li>
+        <li>
+          <i class="fa fa-caret-right text-blue"></i>
+          <span><%- @__('SOFTWARE_OUTSOURCING_SERVICE_ITEM_3') %></span>
+        </li>
+        <li>
+          <i class="fa fa-caret-right text-blue"></i>
+          <span><%- @__('SOFTWARE_OUTSOURCING_SERVICE_ITEM_4') %></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section-solution text-white" id="solution-consultancy">
+  <div class="container">
+    <h2 class="heading text-upper"><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE') %></h2>
+    <p class="sub-heading"><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_DESC') %></p>
+    <div class="explain">
+      <p><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_EXPLAIN') %></p>
+    </div>
+  </div>
+</div>
+
+<div class="section-graphic-design" id="graphic-design">
+  <div class="container">
+    <h2 class="heading text-upper text-blue"><%- @__('WEB_APP_GRAPHIC_DESIGN') %></h2>
+    <p class="sub-heading text-blue"><%- @__('WEB_APP_GRAPHIC_DESIGN_DESC') %></p>
+    <div class="explain">
+      <p><%- @__('WEB_APP_GRAPHIC_DESIGN_EXPLAIN') %></p>
+  </div>
+</div>
+
+<% end %>
